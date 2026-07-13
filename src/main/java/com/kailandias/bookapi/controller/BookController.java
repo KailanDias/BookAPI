@@ -5,7 +5,6 @@ import com.kailandias.bookapi.DTO.response.BookResponse;
 import com.kailandias.bookapi.service.BookService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
@@ -26,10 +25,6 @@ public class BookController {
     }
 
     @Operation(summary = "Cadastra um novo livro")
-    @ApiResponses({
-            @ApiResponse(responseCode = "201", description = "Livro criado com sucesso"),
-            @ApiResponse(responseCode = "400", description = "Dados de entrada invalidos")
-    })
     @PostMapping
     public ResponseEntity<BookResponse> create(@Valid @RequestBody BookRequest request) {
         BookResponse created = service.create(request);
@@ -45,21 +40,12 @@ public class BookController {
     }
 
     @Operation(summary = "Busca um livro pelo id")
-    @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Livro encontrado"),
-            @ApiResponse(responseCode = "404", description = "Livro nao encontrado")
-    })
     @GetMapping("/{id}")
     public ResponseEntity<BookResponse> findById(@PathVariable Long id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
     @Operation(summary = "Atualiza os dados de um livro pelo id")
-    @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Livro atualizado"),
-            @ApiResponse(responseCode = "400", description = "Dados de entrada invalidos"),
-            @ApiResponse(responseCode = "404", description = "Livro nao encontrado")
-    })
     @PutMapping("/{id}")
     public ResponseEntity<BookResponse> update(@PathVariable Long id,
                                                @Valid @RequestBody BookRequest request) {
@@ -67,10 +53,6 @@ public class BookController {
     }
 
     @Operation(summary = "Exclui um livro pelo id")
-    @ApiResponses({
-            @ApiResponse(responseCode = "204", description = "Livro excluido"),
-            @ApiResponse(responseCode = "404", description = "Livro nao encontrado")
-    })
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         service.delete(id);
