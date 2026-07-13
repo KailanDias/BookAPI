@@ -1,7 +1,7 @@
 package com.kailandias.bookapi;
 
 import com.kailandias.bookapi.DTO.request.BookRequest;
-import com.kailandias.bookapi.DTO.request.BookResponse;
+import com.kailandias.bookapi.DTO.response.BookResponse;
 import com.kailandias.bookapi.exception.BookNotFoundException;
 import com.kailandias.bookapi.service.BookService;
 import org.junit.jupiter.api.Test;
