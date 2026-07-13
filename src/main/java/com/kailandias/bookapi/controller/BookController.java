@@ -1,8 +1,8 @@
-package com.kailandias.bookapi.Controller;
+package com.kailandias.bookapi.controller;
 
-import com.kailandias.bookapi.DTO.BookRequest;
-import com.kailandias.bookapi.DTO.BookResponse;
-import com.kailandias.bookapi.Service.BookService;
+import com.kailandias.bookapi.DTO.request.BookRequest;
+import com.kailandias.bookapi.DTO.response.BookResponse;
+import com.kailandias.bookapi.service.BookService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

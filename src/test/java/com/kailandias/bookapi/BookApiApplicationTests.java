@@ -1,9 +1,9 @@
 package com.kailandias.bookapi;
 
-import com.kailandias.bookapi.DTO.BookRequest;
-import com.kailandias.bookapi.DTO.BookResponse;
-import com.kailandias.bookapi.Exception.BookNotFoundException;
-import com.kailandias.bookapi.Service.BookService;
+import com.kailandias.bookapi.DTO.request.BookRequest;
+import com.kailandias.bookapi.DTO.request.BookResponse;
+import com.kailandias.bookapi.exception.BookNotFoundException;
+import com.kailandias.bookapi.service.BookService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

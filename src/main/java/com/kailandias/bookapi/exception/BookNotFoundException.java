@@ -1,4 +1,4 @@
-package com.kailandias.bookapi.Exception;
+package com.kailandias.bookapi.exception;
 
 public class BookNotFoundException extends RuntimeException {
     public BookNotFoundException(Long id) {

@@ -1,4 +1,4 @@
-package com.kailandias.bookapi.DTO;
+package com.kailandias.bookapi.DTO.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

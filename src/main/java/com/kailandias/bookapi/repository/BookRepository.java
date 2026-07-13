@@ -1,6 +1,6 @@
-package com.kailandias.bookapi.Repository;
+package com.kailandias.bookapi.repository;
 
-import com.kailandias.bookapi.Entity.Book;
+import com.kailandias.bookapi.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

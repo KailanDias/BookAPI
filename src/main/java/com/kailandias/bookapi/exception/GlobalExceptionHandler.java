@@ -1,4 +1,4 @@
-package com.kailandias.bookapi.Exception;
+package com.kailandias.bookapi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

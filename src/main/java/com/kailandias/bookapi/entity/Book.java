@@ -1,4 +1,4 @@
-package com.kailandias.bookapi.Entity;
+package com.kailandias.bookapi.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

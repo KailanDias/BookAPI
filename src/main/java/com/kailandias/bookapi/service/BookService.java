@@ -1,11 +1,11 @@
-package com.kailandias.bookapi.Service;
+package com.kailandias.bookapi.service;
 
-import com.kailandias.bookapi.DTO.BookRequest;
-import com.kailandias.bookapi.DTO.BookResponse;
-import com.kailandias.bookapi.Entity.Book;
-import com.kailandias.bookapi.Exception.BookNotFoundException;
-import com.kailandias.bookapi.Mapper.BookMapper;
-import com.kailandias.bookapi.Repository.BookRepository;
+import com.kailandias.bookapi.DTO.request.BookRequest;
+import com.kailandias.bookapi.DTO.response.BookResponse;
+import com.kailandias.bookapi.entity.Book;
+import com.kailandias.bookapi.exception.BookNotFoundException;
+import com.kailandias.bookapi.mapper.BookMapper;
+import com.kailandias.bookapi.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
