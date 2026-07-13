@@ -31,6 +31,7 @@ API REST para gerenciamento de livros, desenvolvida com Spring Boot. Permite cad
 | MapStruct | 1.6.3 | Mapeamento entre DTOs e entidade |
 | Lombok | — | Redução de código repetitivo |
 | springdoc-openapi | 2.8.6 | Documentação interativa (Swagger UI) |
+| SonarQube | — | Análise estática de código e qualidade |
 | JUnit 5 | — | Testes |
 | Maven | — | Build e gerenciamento de dependências |
 
@@ -44,6 +45,7 @@ API REST para gerenciamento de livros, desenvolvida com Spring Boot. Permite cad
 - **Arquitetura em camadas + DTOs** — separa responsabilidades (Controller, Service, Repository) seguindo o princípio SRP do SOLID. Os DTOs isolam o contrato da API do modelo de persistência, evitando expor a entidade diretamente.
 - **MapStruct** — implementa o padrão de mapeamento gerando o código em tempo de compilação, mantendo o desacoplamento entre as camadas.
 - **Lombok** — elimina getters, setters e construtores repetitivos, deixando as classes enxutas e legíveis.
+- **Sonar (SonarQube/SonarCloud)** — garante a qualidade do código e a manutenção dos princípios de Clean Code através de análise estática contínua, detectando proativamente bugs, vulnerabilidades e *code smells*.
 - **springdoc-openapi (Swagger)** — gera documentação interativa automaticamente a partir dos controllers, atendendo ao critério de documentação de forma navegável e testável pelo navegador.
 
 ---
